@@ -8,17 +8,3 @@ links.forEach(link => {
         }, 200);
     }
 })
-
-const typed = new Typed("#project-2", {
-    strings: ["Automated Website Testing"],
-    typeSpeed: 60,
-    loop: false,
-    showCursor: false
-})
-
-const typedTwo = new Typed("#project-1", {
-    strings: ["Portfolio Website"],
-    typeSpeed: 60,
-    loop: false,
-    showCursor: false
-})

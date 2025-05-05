@@ -16,12 +16,9 @@
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
 
-
-
-
     <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../stylesheets/globalStyles.css">
-    <link rel="stylesheet" href="../stylesheets/homeStyles.css">
+    <link rel="stylesheet" href="../stylesheets/projectStyles.css">
     <script src="https://kit.fontawesome.com/896278106b.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
@@ -43,34 +40,39 @@
     </header>
 
     <main class="main-body">
-        <section>
-            <div class="home-container flex">
-                <div class="my-image"><img src="../images/edited.png" alt=""></div>
-                <div class="my-intro flex">
-                    <div class="my-name">
-                        <h4>Hello, I'm</h4>
-                    </div>
-                    <div class="my-name">
-                        <h1>Kushal Patel</h1>
-                    </div>
-                    <div class="my-name">
-                        <h3 class="auto-type-function"></h3>
-                    </div>
-                    <div class="my-info">
-                        <a class="button btn-1 hover-effect" href="mailto:pkushal1052@gmail.com">Contact Info</a>
-                        <a class="button btn-2 hover-effect" href="../assests/Kushal_Patel_Resume.pdf"
-                            download="Kushal_Patel_Resume">Download CV</a>
-                    </div>
-                    <div>
-                        <a class="my-logos" href="https://github.com/pkushal05"><i class="fa-brands fa-github"></i></a>
-                        <a class="my-logos" href="https://www.linkedin.com/in/kushalpatel07/"><i
-                                class="fa-brands fa-linkedin"></i></a>
-                    </div>
+        <div class="project-container flex">
+            <div class="project-cards active">
+                <div class="project-image flex">
+                    <img src="../images/project-image.png" alt="Portfolio website image">
+                </div>
+                <div class="project-content flex">
+                    <h3 id="project-1"></h3>
+                    <p>A dynamic personal portfolio website built using Node.js and EJS. It showcases my skills,
+                        projects, and
+                        contact information featuring a clean and responsive desgin.
+                    </p>
+                    <a href="https://github.com/pkushal05/Portfolio-Website" target="_blank" class="my-logos"><i
+                            class="fa-brands fa-github"></i> View on github</a>
                 </div>
             </div>
-        </section>
+
+            <div class="project-cards">
+                <div class="project-image flex">
+                    <img src="../images/demo-banking-site.png" alt="Software testing project image">
+                </div>
+                <div class="project-content flex">
+                    <h3 id="project-2"></h3>
+                    <p>Automated testing suite for a demo banking site using Selenium. Improves test accuracy, speeds up
+                        execution, and minimizes manual effort in validating site features.
+                    </p>
+                    <a href="" target="_blank" class="my-logos"><i class="fa-brands fa-github"></i> View on github</a>
+                </div>
+            </div>
+        </div>
+
     </main>
-    <script src="../javascripts/homeJs.js"></script>
+
+    <script src="../javascripts/projectsJs.js"></script>
 </body>
 
 </html>

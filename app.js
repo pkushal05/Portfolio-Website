@@ -5,6 +5,7 @@ const path = require('path');
 const homeroutes = require('./routes/homeroutes');
 const aboutMeRoutes = require('./routes/aboutMeRoutes');
 const skillsRoutes = require('./routes/skillsRoutes');
+const projectsRoutes = require('./routes/projectsRoutes');
 
 app.set('view engine', 'ejs');
 app.use(express.json());
@@ -16,6 +17,8 @@ app.use('/', homeroutes);
 app.get('/aboutme', aboutMeRoutes);
 
 app.get('/skills', skillsRoutes);
+
+app.get('/projects', projectsRoutes);
 
 app.listen(3000, () => {
     console.log("Server is running!");
