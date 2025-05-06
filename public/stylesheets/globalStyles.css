@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&family=Inter:wght@300;400;500;700&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +9,17 @@
     --primary-color: #eee5da;
     --secondary-color: #262424;
     --hover-effect-color: #d0c4b8;
+
+    /* ----------------- */
+    --skill-bg-light: #f6f1e8;
+    --skill-bg-muted: #e3d5c4;
+    --skill-bg-accent: #c9b49a;
+
+    /* -----------------*/
+    --skill-bg-cream: #faf5ef;
+    --skill-bg-peach: #f2d1b3;
+    --skill-bg-sage:  #a7b49d;
+
 }
 
 body {
