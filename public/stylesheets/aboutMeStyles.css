@@ -1,7 +1,7 @@
 .main-body {
     margin-top: 18vh;
     flex-direction: column;
-    /* position: relative; */
+    position: relative;
 }
 
 .aboutme-section {
@@ -38,7 +38,7 @@
 .right-about::before {
     content: "";
     width: 2px;
-    top: calc(18vh + 95px);
+    top: calc(18vh - 30px);
     height: 52vh;
     background-color: var(--secondary-color);
     position: absolute;
@@ -87,7 +87,7 @@
 .education-section .right-about::before {
     content: "";
     width: 2px;
-    top: calc(80vh + 185px);
+    top: calc(80vh + 55px);
     height: 52vh;
     background-color: var(--secondary-color);
     position: absolute;
@@ -131,6 +131,7 @@
 
 #arrow-down {
     position: absolute;
-    bottom: 50px;
+    top: 70vh;
     right: 20px;
+    font-size: 25px;
 }

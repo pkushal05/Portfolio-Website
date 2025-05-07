@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const path = require('path');
+require('dotenv').config();
 
 const homeroutes = require('./routes/homeroutes');
 const aboutMeRoutes = require('./routes/aboutMeRoutes');
@@ -21,7 +22,7 @@ app.get('/skills', skillsRoutes);
 
 app.get('/projects', projectsRoutes);
 
-app.get('/contactme', contactMeRoutes);
+app.use('/', contactMeRoutes);
 
 app.listen(3000, () => {
     console.log("Server is running!");

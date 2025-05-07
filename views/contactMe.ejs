@@ -45,15 +45,15 @@
     <main class="main-body">
         <section>
             <div class="contact-container flex">
-                <form action="" method="post" class="contact-left">
+                <form action="/sendmail" method="post" id="form" class="contact-left">
                     <div>
                         <h2 class="contact-left-title">Let's Connect</h2>
                         <hr>
                     </div>
                     <input type="text" placeholder="Your Name" name="name" class="input-fields" required>
-                    <input type="text" placeholder="Subject of topic" name="subject" class="input-fields" required>
+                    <input type="email" placeholder="Your Email" name="email" class="input-fields" required>
                     <textarea name="message" placeholder="Your Message" class="input-fields" required></textarea>
-                    <button type="submit">Send Mail</button>
+                    <button type="submit" id="submit">Send Mail</button>
                 </form>
 
                 <div class="contact-right"><img src="../images/contact-me.svg" alt="Let's connect image"></div>
