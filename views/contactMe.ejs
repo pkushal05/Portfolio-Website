@@ -16,9 +16,12 @@
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
 
+
+
+
     <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../stylesheets/globalStyles.css">
-    <link rel="stylesheet" href="../stylesheets/projectStyles.css">
+    <link rel="stylesheet" href="../stylesheets/contactMeStyles.css">
     <script src="https://kit.fontawesome.com/896278106b.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
@@ -40,39 +43,24 @@
     </header>
 
     <main class="main-body">
-        <div class="project-container flex">
-            <div class="project-cards active">
-                <div class="project-image flex">
-                    <img src="../images/project-image.png" alt="Portfolio website image">
-                </div>
-                <div class="project-content flex">
-                    <h3 id="project-1"></h3>
-                    <p>A dynamic personal portfolio website built using Node.js and EJS. It showcases my skills,
-                        projects, and
-                        contact information featuring a clean and responsive desgin.
-                    </p>
-                    <a href="https://github.com/pkushal05/Portfolio-Website" target="_blank" class="my-logos"><i
-                            class="fa-brands fa-github"></i> View on github</a>
-                </div>
-            </div>
+        <section>
+            <div class="contact-container flex">
+                <form action="" method="post" class="contact-left">
+                    <div>
+                        <h2 class="contact-left-title">Let's Connect</h2>
+                        <hr>
+                    </div>
+                    <input type="text" placeholder="Your Name" name="name" class="input-fields" required>
+                    <input type="text" placeholder="Subject of topic" name="subject" class="input-fields" required>
+                    <textarea name="message" placeholder="Your Message" class="input-fields" required></textarea>
+                    <button type="submit">Send Mail</button>
+                </form>
 
-            <div class="project-cards">
-                <div class="project-image flex">
-                    <img src="../images/demo-banking-site.png" alt="Software testing project image">
-                </div>
-                <div class="project-content flex">
-                    <h3 id="project-2"></h3>
-                    <p>Automated testing suite for a demo banking site using Selenium. Improves test accuracy, speeds up
-                        execution, and minimizes manual effort in validating site features.
-                    </p>
-                    <a href="" target="_blank" class="my-logos"><i class="fa-brands fa-github"></i> View on github</a>
-                </div>
+                <div class="contact-right"><img src="../images/contact-me.svg" alt="Let's connect image"></div>
             </div>
-        </div>
-
+        </section>
     </main>
-
-    <script src="../javascripts/projectsJs.js"></script>
+    <script src="../javascripts/contactMeJs.js"></script>
 </body>
 
 </html>
