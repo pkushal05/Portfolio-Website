@@ -1,9 +1,11 @@
+/* Main */
 .main-body {
     margin-top: 18vh;
     flex-direction: column;
     position: relative;
 }
 
+/* About me */
 .aboutme-section {
     margin-top: 70px;
     width: 60vw;
@@ -58,6 +60,8 @@
     font-size: 1.1rem;
     line-height: 1.8rem;
 }
+
+/* Education-section*/
 
 .education-section {
     margin-top: 100px;

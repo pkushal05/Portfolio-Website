@@ -1,8 +1,10 @@
+/* Main-container*/
 .contact-container {
     height: 80vh;
     justify-content: space-evenly;
 }
 
+/* Form styling*/
 .contact-left {
     display: flex;
     flex-direction: column;

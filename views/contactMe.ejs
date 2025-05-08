@@ -2,37 +2,40 @@
 <html lang="en">
 
 <head>
+    <!-- Meta tags for character set, viewport, title, and author -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kushal Portfolio</title>
 
+    <!-- Meta tags for SEO and social sharing -->
     <meta name="description" content="Personal portfolio featuring skills, projects and resume.">
     <meta name="author" content="Kushal Patel">
 
+    <!-- Open Graph meta tags for better social media sharing -->
     <meta property="og:title" content="Kushal Patel Portfolio">
     <meta property="og:description" content="Personal portfolio featuring skills, projects and resume.">
     <meta property="og:image" content="images/preview.jpg">
     <meta property="og:url" content="https://yourdomain.com">
     <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary_large_image">
 
-
-
-
+    <!-- Favicon and stylesheet links -->
     <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../stylesheets/globalStyles.css">
     <link rel="stylesheet" href="../stylesheets/contactMeStyles.css">
+
+    <!-- FontAwesome and Typed.js for icon usage and typing animation -->
     <script src="https://kit.fontawesome.com/896278106b.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
 </head>
 
 <body>
 
+    <!-- Navigation Bar -->
     <header>
         <nav class="nav-bar">
             <h1 class="nav-name">Kushal.</h1>
             <ul>
+                <!-- Navigation links with tabindex for accessibility -->
                 <li><a href="/" tabindex="1" class="nav-links">Home</a></li>
                 <li><a href="/aboutme" tabindex="2" class="nav-links">About Me</a></li>
                 <li><a href="/skills" tabindex="3" class="nav-links">Skills</a></li>
@@ -42,25 +45,35 @@
         </nav>
     </header>
 
+    <!-- Main Content Section -->
     <main class="main-body">
+        <!-- Contact Form Section -->
         <section>
             <div class="contact-container flex">
+                <!-- Left side contact form -->
                 <form action="/sendmail" method="post" id="form" class="contact-left">
                     <div>
+                        <!-- Contact form title -->
                         <h2 class="contact-left-title">Let's Connect</h2>
                         <hr>
                     </div>
+                    <!-- Input fields for name, email, and message -->
                     <input type="text" placeholder="Your Name" name="name" class="input-fields" required>
                     <input type="email" placeholder="Your Email" name="email" class="input-fields" required>
                     <textarea name="message" placeholder="Your Message" class="input-fields" required></textarea>
+                    <!-- Submit button for sending the message -->
                     <button type="submit" id="submit">Send Mail</button>
                 </form>
 
+                <!-- Right side image -->
                 <div class="contact-right"><img src="../images/contact-me.svg" alt="Let's connect image"></div>
             </div>
         </section>
     </main>
+
+    <!-- External JavaScript file for contact page functionality -->
     <script src="../javascripts/contactMeJs.js"></script>
+
 </body>
 
 </html>

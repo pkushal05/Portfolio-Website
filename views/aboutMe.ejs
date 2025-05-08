@@ -2,37 +2,40 @@
 <html lang="en">
 
 <head>
+    <!-- Meta tags for character set, viewport, title, and author -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kushal Portfolio</title>
 
+    <!-- Meta tags for SEO and social sharing -->
     <meta name="description" content="Personal portfolio featuring skills, projects and resume.">
     <meta name="author" content="Kushal Patel">
 
+    <!-- Open Graph meta tags for better social media sharing -->
     <meta property="og:title" content="Kushal Patel Portfolio">
     <meta property="og:description" content="Personal portfolio featuring skills, projects and resume.">
     <meta property="og:image" content="images/preview.jpg">
     <meta property="og:url" content="https://yourdomain.com">
     <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary_large_image">
 
-
-
-
+    <!-- Favicon and stylesheet links -->
     <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../stylesheets/globalStyles.css">
     <link rel="stylesheet" href="../stylesheets/aboutMeStyles.css">
+
+    <!-- FontAwesome and Typed.js for icon usage and typing animation -->
     <script src="https://kit.fontawesome.com/896278106b.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
 </head>
 
 <body>
 
+    <!-- Navigation Bar -->
     <header>
         <nav class="nav-bar">
             <h1 class="nav-name">Kushal.</h1>
             <ul>
+                <!-- Navigation links with tabindex for accessibility -->
                 <li><a href="/" tabindex="1" class="nav-links">Home</a></li>
                 <li><a href="/aboutme" tabindex="2" class="nav-links">About Me</a></li>
                 <li><a href="/skills" tabindex="3" class="nav-links">Skills</a></li>
@@ -42,18 +45,27 @@
         </nav>
     </header>
 
+    <!-- Main Body Content -->
     <main class="main-body flex">
+        <!-- Down arrow icon for scrolling -->
         <i id="arrow-down" class="fa-solid fa-angle-down"></i>
+
+        <!-- About Me Section -->
         <section class="aboutme-section">
+            <!-- Left side image -->
             <div class="left-about"><img class="aboutme-image" src="../images/Pick_me.png" alt="about me logo"></div>
+
+            <!-- Right side content -->
             <div class="right-about">
-                <div >
+                <div>
+                    <!-- Title for the About Me section -->
                     <h2 class="aboutme-text"></h2>
                 </div>
                 <div class="aboutme-content">
+                    <!-- Personal introduction -->
                     <p>I'm currently studying Computer Programming and Analysis at Durham College in Oshawa, Ontario. I
                         have a solid grasp of both front-end and back-end development, and I enjoy turning ideas into
-                        responsive, real-world solutions. I'm always 
+                        responsive, real-world solutions. I'm always
                         looking to learn, grow,
                         and contribute to projects that make a real impact through thoughtful design and smart
                         technology.
@@ -61,24 +73,35 @@
                 </div>
             </div>
         </section>
+
+        <!-- Education Section -->
         <section class="education-section">
+            <!-- Left side content for education -->
             <div class="left-about">
                 <div>
+                    <!-- Title for the Education section -->
                     <h2 class="education-text"></h2>
                 </div>
                 <div class="education-content">
+                    <!-- Education details -->
                     <h3>Computer Programming and Analysis</h3>
                     <p>Durham College, Oshawa</p>
                     <p>September 2024 - April 2027</p>
                     <h3>Coursework</h3>
+                    <!-- Typewriting animation for coursework -->
                     <p class="auto-type-text"></p>
                 </div>
             </div>
-            <div class="right-about"><img class="education-image" src="../images/education.png" alt="about me logo"></div>
 
+            <!-- Right side image for education -->
+            <div class="right-about"><img class="education-image" src="../images/education.png" alt="about me logo">
+            </div>
         </section>
     </main>
+
+    <!-- External JavaScript file for about me page functionality -->
     <script src="../javascripts/aboutMeJs.js"></script>
+
 </body>
 
 </html>

@@ -1,13 +1,20 @@
+// Adding an underline animation on the current page
+
+// Selecting current url path and all navigation links
 const current = window.location.pathname;
 const links = document.querySelectorAll(".nav-links");
 
 links.forEach(link => {
+
+    // If the link's href matches the current path, add the "active" class to it
     if (link.getAttribute("href") === current) {
         setTimeout(() => {
-            link.classList.add("active");
+            link.classList.add("active"); // Adds active class after 200ms
         }, 200);
-    }
-})
+    };
+});
+
+// Initialize Typed.js animation for all the skills text on the page
 
 const typedOne = new Typed(".web-development", {
     strings: ["Web Development"],
