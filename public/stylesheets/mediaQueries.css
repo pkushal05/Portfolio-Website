@@ -1,5 +1,29 @@
-
+/*--------------------------------- Laptop-----------------------------------------*/
 @media screen and (max-width: 1024px) {
+    /* Global Styles*/
+    h1 {
+        font-size: 3rem;
+        letter-spacing: 1.2px;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+    }
+    
+    p {
+        font-size: 1.1rem;
+        letter-spacing: 1px;
+    }
+    
+    a {
+        font-size: 1.1rem;
+        letter-spacing: 1px;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    /*----------------------Hamburger Navigation Menu------------------------*/
     .nav-bar {
         padding-left: 50px;
         padding-right: 0;
@@ -70,6 +94,114 @@
         font-family: 'Inter', sans-serif;
         font-weight: 200;
         color: var(--primary-color);
+    }
+    /*--------------------------------- Home page -----------------------------------*/
+
+    .my-image {
+        width: 300px;
+        height: 300px;
+    }
+
+    .home-container {
+        margin-top: 20%;
+        gap: 40px;
+    }
+
+    .my-intro {
+        gap: 10px;
+    }
+
+
+
+
+
+
+
+
+    /*---------------------------------About me Page---------------------------------*/
+    
+    .aboutme-image {
+        width: 150px;
+        height: 150px;
+        margin-left: 25px;
+    }
+
+    .right-about::before {
+        top: calc(18vh - 20px);
+    }
+
+    .aboutme-text, .education-text {
+        margin-block: 20px;
+    }
+
+    .aboutme-content p {
+        margin-inline: 20px;
+        margin-top: 10px;
+        line-height: 1.5rem;
+    }
+
+    .right-about .education-image {
+        width: 150px;
+        height: 150px;
+        padding: 0 20px 0 0;
+
+    }
+
+    .education-section .right-about::before {
+        top: calc(80vh + 65px);
+    }
+
+    /*--------------------------------Skills page -------------------------------*/
+    
+    .skills-container {
+        margin-block: 20px;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        
+    }
+
+    /*--------------------------------Projects page -----------------------------*/
+
+    .project-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-cards {
+        height: 475px;
+    }
+
+    /*------------------------------- Contact me page -----------------------------*/
+
+    .contact-container {
+        height: 70vh;
+    }
+    
+    .contact-left-title {
+        font-size: 1.8rem;
+    }
+
+    .contact-left hr{
+        width: 100px;
+    }
+
+    .input-fields {
+        width: 300px;
+        height: 40px;
+    }
+
+    .input-fields::placeholder {
+        font-size: 0.9rem;
+    }
+
+    .contact-left button {
+        font-size: 0.9rem;
+    }
+
+    .contact-right img{
+        width: 350px;
+        height: 350px;
+        object-fit: contain;
     }
 }
 
