@@ -26,7 +26,10 @@ app.use('/', homeroutes);                // Home page route
 app.get('/aboutme', aboutMeRoutes);      // About Me page route
 app.get('/skills', skillsRoutes);        // Skills page route
 app.get('/projects', projectsRoutes);    // Projects page route
-app.use('/', contactMeRoutes);           // Contact Me routes (GET and POST)
+app.use('/', contactMeRoutes);          // Contact Me routes (GET and POST)
+app.get('/navbar', (req, res) => {
+    res.render('navBar');
+})
 
 // Start the server on port 3000
 app.listen(3000, () => {

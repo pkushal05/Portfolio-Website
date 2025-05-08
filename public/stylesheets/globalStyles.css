@@ -135,6 +135,20 @@ nav>ul {
     transform-origin: left;
 }
 
+.copyright-text {
+    display: none;
+    font-size: 1rem;
+    color: var(--primary-color);
+}
+
+#sidebar-active {
+    display: none;
+}
+
+.open-sidebar-button, .close-sidebar-button {
+    display: none;
+}
+
 /* Keyframe animation - page fades in after loading */
 
 @keyframes fadeSlide {

@@ -22,6 +22,7 @@
     <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../stylesheets/globalStyles.css">
     <link rel="stylesheet" href="../stylesheets/homeStyles.css">
+    <link rel="stylesheet" href="../stylesheets/mediaQueries.css">
 
     <!-- FontAwesome and Typed.js for icon usage and typing animation -->
     <script src="https://kit.fontawesome.com/896278106b.js" crossorigin="anonymous"></script>
@@ -41,6 +42,29 @@
                 <li><a href="/skills" tabindex="3" class="nav-links">Skills</a></li>
                 <li><a href="/projects" tabindex="4" class="nav-links">Projects</a></li>
                 <li><a href="/contactme" tabindex="5" class="nav-links">Contact Me</a></li>
+            </ul>
+        </nav>
+        <!-- Hamburger navigation bar for media-queries -->>
+        <nav class="nav-bar">
+            <h1 class="nav-name"> Kushal.</h1>
+            <input type="checkbox" id="sidebar-active">
+            <label for="sidebar-active" class="open-sidebar-button">
+                <i class="fa-solid fa-bars fa-lg"></i>
+            </label>
+
+            <ul class="links-container">
+                <label for="sidebar-active" class="close-sidebar-button">
+                    <i class="fa-solid fa-xmark fa-lg"></i>
+                </label>
+                <!-- Navigation links with tabindex for accessibility -->
+                <li><a href="/" tabindex="1" class="nav-links">Home</a></li>
+                <li><a href="/aboutme" tabindex="2" class="nav-links">About Me</a></li>
+                <li><a href="/skills" tabindex="3" class="nav-links">Skills</a></li>
+                <li><a href="/projects" tabindex="4" class="nav-links">Projects</a></li>
+                <li><a href="/contactme" tabindex="5" class="nav-links">Contact Me</a></li>
+
+                <span class="copyright-text"><i class="fa-regular fa-copyright fa-lg"></i> 2025 Kushal Patel. All rights
+                    reserved</span>
             </ul>
         </nav>
     </header>
