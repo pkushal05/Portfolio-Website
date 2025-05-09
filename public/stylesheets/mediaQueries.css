@@ -1,26 +1,25 @@
 /*--------------------------------- Laptop-----------------------------------------*/
 @media screen and (max-width: 1024px) {
+
     /* Global Styles*/
     h1 {
         font-size: 3rem;
         letter-spacing: 1.2px;
     }
-    
+
     h2 {
         font-size: 1.5rem;
         letter-spacing: 1px;
     }
-    
+
     p {
         font-size: 1.1rem;
         letter-spacing: 1px;
     }
-    
+
     a {
         font-size: 1.1rem;
         letter-spacing: 1px;
-        text-decoration: none;
-        display: inline-block;
     }
 
     /*----------------------Hamburger Navigation Menu------------------------*/
@@ -28,28 +27,29 @@
         padding-left: 50px;
         padding-right: 0;
     }
-    
+
     .nav-name {
         font-size: 2.5rem;
         padding-left: 40px;
         letter-spacing: 3px;
     }
 
-    .nav-bar > ul {
+    .nav-bar>ul {
         gap: 30px;
     }
-    
+
     #sidebar-active {
         display: none;
     }
-    
-    .open-sidebar-button, .close-sidebar-button {
+
+    .open-sidebar-button,
+    .close-sidebar-button {
         display: none;
     }
 
     .links-container {
         flex-direction: column;
-        align-items: flex-start ;
+        align-items: flex-start;
         position: fixed;
         top: 0;
         transform: translateX(100%);
@@ -60,13 +60,14 @@
         padding-top: 20px;
         transition: 0.6s ease-in-out;
     }
-    
+
     .nav-links {
         margin: 10px;
         padding-left: 20px;
     }
 
-    .open-sidebar-button, .close-sidebar-button {
+    .open-sidebar-button,
+    .close-sidebar-button {
         display: block;
         padding-right: 20px;
     }
@@ -75,7 +76,7 @@
         padding-left: 20px;
     }
 
-    #sidebar-active:checked ~ .links-container {
+    #sidebar-active:checked~.links-container {
         transform: translateX(0);
     }
 
@@ -85,16 +86,17 @@
 
     .copyright-text {
         display: none;
-        
+
     }
 
-    #sidebar-active:checked ~ .links-container .copyright-text {
+    #sidebar-active:checked~.links-container .copyright-text {
         display: block;
         font-size: 1rem;
         font-family: 'Inter', sans-serif;
         font-weight: 200;
         color: var(--primary-color);
     }
+
     /*--------------------------------- Home page -----------------------------------*/
 
     .my-image {
@@ -111,15 +113,8 @@
         gap: 10px;
     }
 
-
-
-
-
-
-
-
     /*---------------------------------About me Page---------------------------------*/
-    
+
     .aboutme-image {
         width: 150px;
         height: 150px;
@@ -127,11 +122,12 @@
     }
 
     .right-about::before {
-        top: calc(18vh - 20px);
+        top: calc(18vh - 12px);
     }
 
-    .aboutme-text, .education-text {
-        margin-block: 20px;
+    .aboutme-text,
+    .education-text {
+        margin-block: 15px;
     }
 
     .aboutme-content p {
@@ -148,16 +144,16 @@
     }
 
     .education-section .right-about::before {
-        top: calc(80vh + 65px);
+        top: calc(80vh + 75px);
     }
 
     /*--------------------------------Skills page -------------------------------*/
-    
+
     .skills-container {
         margin-block: 20px;
         grid-template-columns: repeat(1, 1fr);
         gap: 20px;
-        
+
     }
 
     /*--------------------------------Projects page -----------------------------*/
@@ -176,12 +172,12 @@
     .contact-container {
         height: 70vh;
     }
-    
+
     .contact-left-title {
         font-size: 1.8rem;
     }
 
-    .contact-left hr{
+    .contact-left hr {
         width: 100px;
     }
 
@@ -198,10 +194,136 @@
         font-size: 0.9rem;
     }
 
-    .contact-right img{
+    .contact-right img {
         width: 350px;
         height: 350px;
         object-fit: contain;
     }
 }
 
+@media screen and (max-width: 768px) {
+
+    /* Global Styles*/
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    a {
+        font-size: 1rem;
+    }
+
+    /*--------------------------Home page-----------------------------------*/
+
+    .home-container {
+        flex-direction: column;
+        margin-top: 5%;
+    }
+
+    .my-image {
+        width: 250px;
+        height: 250px;
+    }
+
+    .my-intro {
+        gap: 5px
+    }
+
+    .nav-name {
+        font-size: 2rem;
+        padding-left: 20px;
+    }
+
+    /*----------------------------About me page---------------------------------*/
+
+    #arrow-down {
+        display: none;
+    }
+
+    .aboutme-section .left-about,
+    .education-section .right-about {
+        display: none;
+    }
+
+    .aboutme-section {
+        margin-top: 40px;
+        width: 400px;
+        gap: 10px;
+        justify-content: center;
+
+    }
+
+    .aboutme-text,
+    .education-text {
+        margin-block: 10px;
+    }
+
+    .aboutme-content p {
+        font-size: 0.9rem;
+        margin-inline: 0;
+        margin-top: 5px;
+        line-height: 1.3rem;
+    }
+
+    .education-section .right-about::before,
+    .right-about::before {
+        display: none;
+    }
+
+    .education-section {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 400px;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .education-content h3 {
+        letter-spacing: 1.1px;
+        font-size: 1.1rem;
+        margin-inline: 0;
+        margin-top: 20px;
+    }
+
+    .education-content p:first-of-type,
+    .education-content p:nth-of-type(3) {
+        margin-inline: 0;
+        font-size: 1rem;
+        margin-top: 15px;
+        line-height: 1.3rem;
+        font-size: 1rem;
+
+    }
+
+    .education-content p:nth-of-type(2) {
+        margin-inline: 0;
+        margin-top: 20px;
+        font-size: 1rem;
+        line-height: 1.1rem;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
