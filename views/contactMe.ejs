@@ -33,69 +33,79 @@
 
     <!-- Navigation Bar -->
     <header>
-        <nav class="nav-bar">
+        <nav class="nav-bar" aria-label="Main navigation">
             <h1 class="nav-name">Kushal.</h1>
             <ul>
                 <!-- Navigation links with tabindex for accessibility -->
-                <li><a href="/" tabindex="1" class="nav-links">Home</a></li>
-                <li><a href="/aboutme" tabindex="2" class="nav-links">About Me</a></li>
-                <li><a href="/skills" tabindex="3" class="nav-links">Skills</a></li>
-                <li><a href="/projects" tabindex="4" class="nav-links">Projects</a></li>
-                <li><a href="/contactme" tabindex="5" class="nav-links">Contact Me</a></li>
+                <li><a href="/" tabindex="1" class="nav-links" aria-label="Go to Home page">Home</a></li>
+                <li><a href="/aboutme" tabindex="2" class="nav-links" aria-label="Go to About Me page">About Me</a></li>
+                <li><a href="/skills" tabindex="3" class="nav-links" aria-label="Go to Skills page">Skills</a></li>
+                <li><a href="/projects" tabindex="4" class="nav-links" aria-label="Go to Projects page">Projects</a>
+                </li>
+                <li><a href="/contactme" tabindex="5" class="nav-links" aria-label="Go to Contact Me page">Contact
+                        Me</a></li>
             </ul>
         </nav>
 
-        <!-- Hamburger navigation bar for media-queries -->>
-        <nav class="nav-bar">
-            <h1 class="nav-name">Kushal.</h1>
-            <input type="checkbox" id="sidebar-active">
-            <label for="sidebar-active" class="open-sidebar-button">
+        <!-- Hamburger navigation bar for media-queries -->
+        <nav class="nav-bar" aria-label="Mobile Navigation">
+            <h1 class="nav-name"> Kushal.</h1>
+            <input type="checkbox" id="sidebar-active" aria-label="Toggle sidebar menu">
+            <label for="sidebar-active" class="open-sidebar-button" aria-label="Open sidebar navigation">
                 <i class="fa-solid fa-bars fa-lg"></i>
             </label>
 
             <ul class="links-container">
-                <label for="sidebar-active" class="close-sidebar-button">
+                <label for="sidebar-active" class="close-sidebar-button" aria-label="Close sidebar navigation">
                     <i class="fa-solid fa-xmark fa-lg"></i>
                 </label>
                 <!-- Navigation links with tabindex for accessibility -->
-                <li><a href="/" tabindex="1" class="nav-links">Home</a></li>
-                <li><a href="/aboutme" tabindex="2" class="nav-links">About Me</a></li>
-                <li><a href="/skills" tabindex="3" class="nav-links">Skills</a></li>
-                <li><a href="/projects" tabindex="4" class="nav-links">Projects</a></li>
-                <li><a href="/contactme" tabindex="5" class="nav-links">Contact Me</a></li>
+                <li><a href="/" tabindex="1" class="nav-links" aria-label="Go to Home page">Home</a></li>
+                <li><a href="/aboutme" tabindex="2" class="nav-links" aria-label="Go to About Me page">About Me</a></li>
+                <li><a href="/skills" tabindex="3" class="nav-links" aria-label="Go to Skills page">Skills</a></li>
+                <li><a href="/projects" tabindex="4" class="nav-links" aria-label="Go to Projects page">Projects</a>
+                </li>
+                <li><a href="/contactme" tabindex="5" class="nav-links" aria-label="Go to Contact Me page">Contact
+                        Me</a></li>
 
-                <li><span class="copyright-text"><i class="fa-regular fa-copyright fa-lg"></i> 2025 Kushal Patel. All
-                        rights reserved</span></li>
+                <span class="copyright-text" aria-label="Copyright Notice"><i class="fa-regular fa-copyright fa-lg"></i>
+                    2025 Kushal Patel. All rights
+                    reserved</span>
             </ul>
         </nav>
-
     </header>
 
     <!-- Main Content Section -->
-    <main class="main-body">
+    <main class="main-body" aria-label="Contact Main Section">
         <!-- Contact Form Section -->
-        <section>
-            <div class="contact-container flex">
+        <section aria-label="Contact Form Section">
+            <div class="contact-container flex" aria-label="Contact Form Container">
                 <!-- Left side contact form -->
-                <form action="/sendmail" method="post" id="form" class="contact-left">
+                <form action="/sendmail" method="post" id="form" class="contact-left" aria-label="Email Contact Form">
                     <div>
                         <!-- Contact form title -->
                         <h2 class="contact-left-title">Let's Connect</h2>
                         <hr>
                     </div>
                     <!-- Input fields for name, email, and message -->
-                    <input type="text" placeholder="Your Name" name="name" class="input-fields" required>
-                    <input type="email" placeholder="Your Email" name="email" class="input-fields" required>
-                    <textarea name="message" placeholder="Your Message" class="input-fields" required></textarea>
+                    <input type="text" placeholder="Your Name" name="name" class="input-fields" required
+                        aria-label="Your Name">
+                    <input type="email" placeholder="Your Email" name="email" class="input-fields" required
+                        aria-label="Your Email">
+                    <textarea name="message" placeholder="Your Message" class="input-fields" required
+                        aria-label="Your Message"></textarea>
                     <!-- Submit button for sending the message -->
-                    <button type="submit" id="submit">Send Mail</button>
+                    <button type="submit" id="submit" aria-label="Send Email">Send Mail</button>
                 </form>
 
                 <!-- Right side image -->
-                <div class="contact-right"><img src="../images/contact-me.svg" alt="Let's connect image"></div>
+                <div class="contact-right" aria-label="Contact Illustration">
+                    <img src="../images/contact-me.svg" alt="Let's connect image">
+                </div>
             </div>
         </section>
     </main>
+
 
     <!-- External JavaScript file for contact page functionality -->
     <script src="../javascripts/contactMeJs.js"></script>

@@ -32,85 +32,95 @@
 
 <body>
 
-    <!-- Navigation bar for accessing various sections of the portfolio -->
+    <!-- Navigation Bar -->
     <header>
-        <nav class="nav-bar">
+        <nav class="nav-bar" aria-label="Main navigation">
             <h1 class="nav-name">Kushal.</h1>
             <ul>
-                <!-- Navigation links for Home, About Me, Skills, Projects, and Contact -->
-                <li><a href="/" tabindex="1" class="nav-links">Home</a></li>
-                <li><a href="/aboutme" tabindex="2" class="nav-links">About Me</a></li>
-                <li><a href="/skills" tabindex="3" class="nav-links">Skills</a></li>
-                <li><a href="/projects" tabindex="4" class="nav-links">Projects</a></li>
-                <li><a href="/contactme" tabindex="5" class="nav-links">Contact Me</a></li>
+                <!-- Navigation links with tabindex for accessibility -->
+                <li><a href="/" tabindex="1" class="nav-links" aria-label="Go to Home page">Home</a></li>
+                <li><a href="/aboutme" tabindex="2" class="nav-links" aria-label="Go to About Me page">About Me</a></li>
+                <li><a href="/skills" tabindex="3" class="nav-links" aria-label="Go to Skills page">Skills</a></li>
+                <li><a href="/projects" tabindex="4" class="nav-links" aria-label="Go to Projects page">Projects</a>
+                </li>
+                <li><a href="/contactme" tabindex="5" class="nav-links" aria-label="Go to Contact Me page">Contact
+                        Me</a></li>
             </ul>
         </nav>
 
-        <!-- Hamburger navigation bar for media-queries -->>
-        <nav class="nav-bar">
+        <!-- Hamburger navigation bar for media-queries -->
+        <nav class="nav-bar" aria-label="Mobile Navigation">
             <h1 class="nav-name"> Kushal.</h1>
-            <input type="checkbox" id="sidebar-active">
-            <label for="sidebar-active" class="open-sidebar-button">
+            <input type="checkbox" id="sidebar-active" aria-label="Toggle sidebar menu">
+            <label for="sidebar-active" class="open-sidebar-button" aria-label="Open sidebar navigation">
                 <i class="fa-solid fa-bars fa-lg"></i>
             </label>
 
             <ul class="links-container">
-                <label for="sidebar-active" class="close-sidebar-button">
+                <label for="sidebar-active" class="close-sidebar-button" aria-label="Close sidebar navigation">
                     <i class="fa-solid fa-xmark fa-lg"></i>
                 </label>
                 <!-- Navigation links with tabindex for accessibility -->
-                <li><a href="/" tabindex="1" class="nav-links">Home</a></li>
-                <li><a href="/aboutme" tabindex="2" class="nav-links">About Me</a></li>
-                <li><a href="/skills" tabindex="3" class="nav-links">Skills</a></li>
-                <li><a href="/projects" tabindex="4" class="nav-links">Projects</a></li>
-                <li><a href="/contactme" tabindex="5" class="nav-links">Contact Me</a></li>
+                <li><a href="/" tabindex="1" class="nav-links" aria-label="Go to Home page">Home</a></li>
+                <li><a href="/aboutme" tabindex="2" class="nav-links" aria-label="Go to About Me page">About Me</a></li>
+                <li><a href="/skills" tabindex="3" class="nav-links" aria-label="Go to Skills page">Skills</a></li>
+                <li><a href="/projects" tabindex="4" class="nav-links" aria-label="Go to Projects page">Projects</a>
+                </li>
+                <li><a href="/contactme" tabindex="5" class="nav-links" aria-label="Go to Contact Me page">Contact
+                        Me</a></li>
 
-                <span class="copyright-text"><i class="fa-regular fa-copyright fa-lg"></i> 2025 Kushal Patel. All rights
+                <span class="copyright-text" aria-label="Copyright Notice"><i class="fa-regular fa-copyright fa-lg"></i>
+                    2025 Kushal Patel. All rights
                     reserved</span>
             </ul>
         </nav>
     </header>
 
     <!-- Main content body of the portfolio -->
-    <main class="main-body flex">
-        <section>
+    <main class="main-body flex" aria-label="Skills Main Section">
+        <section aria-label="All Skills Sections">
             <div class="skills-container">
                 <!-- Web Development Section -->
-                <div class="skills-box odd">
+                <div class="skills-box odd" aria-label="Web Development Skills">
                     <h2 class="skill-title web-development"></h2>
-                    <div class="skill-content">
-                        <div class="skill-card"><i class="fa-brands fa-html5"></i><span>HTML</span></div>
-                        <div class="skill-card"><i class="fa-brands fa-css3-alt"></i><span>CSS</span></div>
-                        <div class="skill-card"><i class="fa-brands fa-js"></i><span>Javascript</span></div>
+                    <div class="skill-content" aria-label="Web Development Technologies">
+                        <div class="skill-card" aria-label="Skill: HTML"><i
+                                class="fa-brands fa-html5"></i><span>HTML</span></div>
+                        <div class="skill-card" aria-label="Skill: CSS"><i
+                                class="fa-brands fa-css3-alt"></i><span>CSS</span></div>
+                        <div class="skill-card" aria-label="Skill: JavaScript"><i
+                                class="fa-brands fa-js"></i><span>Javascript</span></div>
                     </div>
                 </div>
 
                 <!-- Programming Languages Section -->
-                <div class="skills-box even">
+                <div class="skills-box even" aria-label="Programming Languages Skills">
                     <h2 class="skill-title programming-languages"></h2>
-                    <div class="skill-content">
-                        <div class="skill-card"><i class="fa-brands fa-python"></i><span>Python</span></div>
-                        <div class="skill-card"><i class="fa-brands fa-java"></i><span>Java</span></div>
+                    <div class="skill-content" aria-label="Programming Languages">
+                        <div class="skill-card" aria-label="Skill: Python"><i
+                                class="fa-brands fa-python"></i><span>Python</span></div>
+                        <div class="skill-card" aria-label="Skill: Java"><i
+                                class="fa-brands fa-java"></i><span>Java</span></div>
                     </div>
                 </div>
 
                 <!-- Back-End Technologies Section -->
-                <div class="skills-box even">
+                <div class="skills-box even" aria-label="Back-End Technologies Skills">
                     <h2 class="skill-title back-end"></h2>
-                    <div class="skill-content">
-                        <div class="skill-card">
+                    <div class="skill-content" aria-label="Back-End Technologies">
+                        <div class="skill-card" aria-label="Skill: MS SQL Server">
                             <i class="devicon-microsoftsqlserver-plain-wordmark"></i>
                             <span>MS SQL Server</span>
                         </div>
-                        <div class="skill-card">
+                        <div class="skill-card" aria-label="Skill: Mongo DB">
                             <i class="devicon-mongodb-plain"></i>
                             <span>Mongo DB</span>
                         </div>
-                        <div class="skill-card">
+                        <div class="skill-card" aria-label="Skill: Node.js">
                             <i class="devicon-nodejs-plain"></i>
                             <span>Node.js</span>
                         </div>
-                        <div class="skill-card">
+                        <div class="skill-card" aria-label="Skill: Express">
                             <i class="devicon-express-original"></i>
                             <span>Express</span>
                         </div>
@@ -118,30 +128,30 @@
                 </div>
 
                 <!-- Tools and IDEs Section -->
-                <div class="skills-box odd">
+                <div class="skills-box odd" aria-label="Tools and IDEs Skills">
                     <h2 class="skill-title tools-ides"></h2>
-                    <div class="skill-content">
-                        <div class="skill-card">
+                    <div class="skill-content" aria-label="Tools and IDEs">
+                        <div class="skill-card" aria-label="Skill: Git">
                             <i class="devicon-git-plain"></i>
                             <span>Git</span>
                         </div>
-                        <div class="skill-card">
+                        <div class="skill-card" aria-label="Skill: Github">
                             <i class="devicon-github-original"></i>
                             <span>Github</span>
                         </div>
-                        <div class="skill-card">
+                        <div class="skill-card" aria-label="Skill: VS Code">
                             <i class="devicon-vscode-plain"></i>
                             <span>VS Code</span>
                         </div>
-                        <div class="skill-card">
+                        <div class="skill-card" aria-label="Skill: Pycharm">
                             <i class="devicon-pycharm-plain"></i>
                             <span>Pycharm</span>
                         </div>
-                        <div class="skill-card">
+                        <div class="skill-card" aria-label="Skill: IntelliJ">
                             <i class="devicon-intellij-plain"></i>
                             <span>IntelliJ</span>
                         </div>
-                        <div class="skill-card">
+                        <div class="skill-card" aria-label="Skill: Selenium">
                             <i class="devicon-selenium-original"></i>
                             <span>Selenium</span>
                         </div>
@@ -149,14 +159,14 @@
                 </div>
 
                 <!-- Software Development Concepts Section -->
-                <div class="skills-box odd">
+                <div class="skills-box odd" aria-label="Software Development Concepts Skills">
                     <h2 class="skill-title software-development"></h2>
-                    <div class="skill-content">
-                        <div class="skill-card">
+                    <div class="skill-content" aria-label="Software Development Concepts">
+                        <div class="skill-card" aria-label="Skill: Object Oriented Programming">
                             <i class="fa-solid fa-cubes"></i>
                             <span>Object Oriented Programming (OOP)</span>
                         </div>
-                        <div class="skill-card">
+                        <div class="skill-card" aria-label="Skill: Software Development Life Cycle">
                             <i class="fa-solid fa-diagram-project"></i>
                             <span>Software Development Life Cycle (SDLC)</span>
                         </div>
@@ -164,22 +174,22 @@
                 </div>
 
                 <!-- Soft Skills Section -->
-                <div class="skills-box even">
+                <div class="skills-box even" aria-label="Soft Skills">
                     <h2 class="skill-title soft-skills"></h2>
-                    <div class="skill-content">
-                        <div class="skill-card">
+                    <div class="skill-content" aria-label="Soft Skills List">
+                        <div class="skill-card" aria-label="Skill: Teamwork">
                             <i class="fa-solid fa-people-group"></i>
                             <span>Teamwork</span>
                         </div>
-                        <div class="skill-card">
+                        <div class="skill-card" aria-label="Skill: Communication">
                             <i class="fa-solid fa-comments"></i>
                             <span>Communication</span>
                         </div>
-                        <div class="skill-card">
+                        <div class="skill-card" aria-label="Skill: Time Management">
                             <i class="fa-solid fa-clock"></i>
                             <span>Time Management</span>
                         </div>
-                        <div class="skill-card">
+                        <div class="skill-card" aria-label="Skill: Problem Solving">
                             <i class="fa-solid fa-puzzle-piece"></i>
                             <span>Problem Solving</span>
                         </div>
@@ -188,6 +198,7 @@
             </div>
         </section>
     </main>
+
 
     <!-- Script for dynamic skill animations (if needed) -->
     <script src="../javascripts/skillsJs.js"></script>

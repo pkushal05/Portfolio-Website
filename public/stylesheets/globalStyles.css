@@ -16,6 +16,15 @@
     --skill-bg-peach: #f2d1b3;
 }
 
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+}
+
 body {
     background-color: var(--primary-color);
     font-family: "Special Gothic Expanded One", sans-serif;
