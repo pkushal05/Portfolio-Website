@@ -17,10 +17,29 @@ links.forEach(link => {
 // Get references to the form and submit button elements
 const form = document.getElementById("form");
 const submitButton = document.getElementById("submit");
+const name = document.getElementById("name");
+const email = document.getElementById("email");
 
 // Event listener for form submission
 form.addEventListener("submit", async function (e) {
   e.preventDefault();  // Prevent the default form submission behavior
+
+  const name = nameInput.value.trim();
+  const email = emailInput.value.trim();
+
+  // Basic name check
+  const nameValid = /^[A-Za-z\s]{2,}$/.test(name);
+  if (!nameValid) {
+    alert("Please enter a valid name (letters only, at least 2 characters).");
+    return;
+  }
+
+  // Basic email check
+  const emailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  if (!emailValid) {
+    alert("Please enter a valid email address.");
+    return;
+  }
 
   try {
     // Disable the submit button while the request is being processed
