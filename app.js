@@ -3,6 +3,7 @@ const express = require('express');
 const app = express();
 const path = require('path');
 require('dotenv').config(); // Load environment variables from .env file
+const PORT = process.env.PORT || 3000;
 
 // Import route modules
 const homeroutes = require('./routes/homeroutes');
@@ -29,6 +30,6 @@ app.get('/projects', projectsRoutes);    // Projects page route
 app.use('/', contactMeRoutes);          // Contact Me routes (GET and POST)
 
 // Start the server on port 3000
-app.listen(3000, () => {
-    console.log("Server is running!");
+app.listen(PORT, () => {
+    console.log(`Server is running at port ${PORT}`);
 });
