@@ -227,6 +227,7 @@
     .nav-bar {
         padding-left: 20px;
         padding-right: 0;
+        height: 90px;
     }
 
     .nav-name {
@@ -239,7 +240,7 @@
 
     .home-container {
         flex-direction: column;
-        margin-top: 5%;
+        margin-top: 130px;
     }
 
     .my-image {
@@ -270,9 +271,9 @@
     .aboutme-section {
         margin-top: 20px;
         width: 400px;
+        height: 385px;
         gap: 10px;
         justify-content: center;
-
     }
 
     .aboutme-text,
@@ -296,6 +297,7 @@
         margin-top: 50px;
         margin-bottom: 50px;
         width: 400px;
+        height: 320px;
         gap: 10px;
         justify-content: center;
     }
@@ -362,19 +364,4 @@
     .contact-right {
         display: none;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

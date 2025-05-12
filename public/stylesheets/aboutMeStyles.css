@@ -9,7 +9,7 @@
 .aboutme-section {
     margin-top: 70px;
     width: 60vw;
-    height: 60vh;
+    height: 440px;
     border: 3px solid var(--secondary-color);
     border-radius: 50px;
     display: flex;
@@ -67,7 +67,7 @@
     margin-top: 100px;
     margin-bottom: 100px;
     width: 60vw;
-    height: 60vh;
+    height: 440px;
     border: 3px solid var(--secondary-color);
     border-radius: 50px;
     display: flex;
