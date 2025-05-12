@@ -112,7 +112,7 @@
     }
 
     .home-container {
-        margin-top: 170px;
+        margin-top: 50px;
         gap: 40px;
     }
 
@@ -130,7 +130,7 @@
     }
 
     .right-about::before {
-        top: calc(18vh - 40px);
+        top: 20px;
     }
 
     .aboutme-section {
@@ -162,7 +162,7 @@
     }
 
     .education-section .right-about::before {
-        top: calc(80vh + 75px);
+        top: 20px;
     }
 
     /*--------------------------------Skills page -------------------------------*/
@@ -255,7 +255,7 @@
 
     .home-container {
         flex-direction: column;
-        margin-top: 250px;
+        margin-top: 30px
     }
 
     .my-image {
