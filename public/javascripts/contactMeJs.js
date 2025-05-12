@@ -17,8 +17,8 @@ links.forEach(link => {
 // Get references to the form and submit button elements
 const form = document.getElementById("form");
 const submitButton = document.getElementById("submit");
-const name = document.getElementById("name");
-const email = document.getElementById("email");
+const nameInput = document.getElementById("name");
+const emailInput = document.getElementById("email");
 
 // Event listener for form submission
 form.addEventListener("submit", async function (e) {
