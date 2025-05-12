@@ -59,7 +59,7 @@ a {
 /* Utility classes */
 
 .main-body {
-    margin-top: 18vh;
+    margin-top: 160px;
     opacity: 0;
     transform: translateY(30);
     animation: fadeSlide 0.5s ease-in forwards;

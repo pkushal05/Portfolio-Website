@@ -1,7 +1,7 @@
 /* Skills page styling*/
 
 .skills-container {
-    margin-block: 30px;
+    margin-block: 20px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 25px;
