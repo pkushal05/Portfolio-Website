@@ -63,6 +63,7 @@ a {
     opacity: 0;
     transform: translateY(30);
     animation: fadeSlide 0.5s ease-in forwards;
+    height: fit-content;
 }
 
 .flex {
